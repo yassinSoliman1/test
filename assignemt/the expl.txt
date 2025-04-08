@@ -1,0 +1,34 @@
+Character Classification:
+
+It checks if the current character is a letter, digit, or something unknown.
+
+Token Recognition:
+
+If it's a letter, it identifies it as an identifier (like a variable name).
+
+If it's a digit, it treats it as an integer.
+
+Special characters like +, -, *, (, ) are recognized as operators or punctuations.
+
+Token Output:
+
+For each recognized token, it prints the token type and the actual string (lexeme). For example, it might print:
+
+vbnet
+Copy
+Next token is: 11, Next lexeme is x
+indicating that x is an identifier.
+
+The process continues until it reaches the end of file (EOF).
+
+Example:
+For input like x = 5 + 3, it prints:
+
+vbnet
+Copy
+Next token is: 11, Next lexeme is x
+Next token is: 20, Next lexeme is =
+Next token is: 10, Next lexeme is 5
+Next token is: 21, Next lexeme is +
+Next token is: 10, Next lexeme is 3
+This is a simple lexer that splits the input into tokens for further processing in a compiler or interpreter.
